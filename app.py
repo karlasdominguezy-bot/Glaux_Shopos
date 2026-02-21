@@ -205,11 +205,11 @@ def interfaz_gestor_archivos():
     
     with col_avatar:
         if os.path.exists(AVATAR_URL):
-    img_b64 = get_img_as_base64(AVATAR_URL)
-    st.markdown(
-        f'<img src="data:image/png;base64,{img_b64}" style="width:100%; max-width: 300px;">',
-        unsafe_allow_html=True
-    )
+            img_b64 = get_img_as_base64(AVATAR_URL)
+            st.markdown(
+                f'<img src="data:image/png;base64,{img_b64}" style="width:100%; max-width: 300px;">',
+                unsafe_allow_html=True
+            )
             
     with col_contenido:
         st.info("Ayuda al Ing. Glaux Shopos a aprender subiendo los sílabos y libros aquí.") 
