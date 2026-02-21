@@ -30,8 +30,7 @@ if not os.path.exists(PDF_FOLDER):
 
 # --- RECURSOS GRÁFICOS ---
 LOGO_URL = "UCELOGO.png"
-AVATAR_URL = "Glaux_Saphos_PNG.png"
-AVATAR_URL_GESTION = "Glaux_Saphos_PNG.png"
+AVATAR_URL = "Glaux_Shopos_PNG.png"
 
 # --- 2. FUNCIONES DE LÓGICA (Backend) ---
 
