@@ -13,7 +13,7 @@ load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
 st.set_page_config(
-    page_title="Ing. Condoi - UCE",
+    page_title="Ing. Glaux Shopos - UCE",
     page_icon="🦅",
     layout="wide"
 )
@@ -30,8 +30,8 @@ if not os.path.exists(PDF_FOLDER):
 
 # --- RECURSOS GRÁFICOS ---
 LOGO_URL = "UCELOGO.png"
-AVATAR_URL = "avatar_uce.gif"
-AVATAR_URL_GESTION = "avatar_uce2.gif"
+AVATAR_URL = "Glaux_Saphos_PNG.png"
+AVATAR_URL_GESTION = "Glaux_Saphos_PNG.png"
 
 # --- 2. FUNCIONES DE LÓGICA (Backend) ---
 
@@ -189,7 +189,7 @@ def sidebar_uce():
         st.markdown("### UCE - FICA")
         st.divider()
         st.title("Navegación")
-        opcion = st.radio("Ir a:", ["💬 Chat con Ing. Condoi", "📂 Gestión de Bibliografía"])
+        opcion = st.radio("Ir a:", ["💬 Chat con Ing. Glaux Shopos", "📂 Gestión de Bibliografía"])
         st.divider()
         return opcion
 
@@ -213,7 +213,7 @@ def interfaz_gestor_archivos():
             st.markdown(f'<img src="data:image/gif;base64,{img_b64}" style="width:100%; max-width: 300px;">', unsafe_allow_html=True)
             
     with col_contenido:
-        st.info("Ayuda al Ing. Condoi a aprender subiendo los sílabos y libros aquí.") 
+        st.info("Ayuda al Ing. Glaux Shopos a aprender subiendo los sílabos y libros aquí.") 
         st.markdown("---") 
         
         col1, col2 = st.columns([1, 2]) 
@@ -273,13 +273,13 @@ def interfaz_chat():
         with col_ht:
             st.markdown("""
                 <h2 style='margin-bottom: 0px; padding-top: 0px; color: #002F6C;'>💬 Asistente Virtual</h2>
-                <p style='margin-top: 0px; color: gray; font-size: 14px;'>Ing. Condoi - Tu Tutor Virtual de la FICA</p>
+                <p style='margin-top: 0px; color: gray; font-size: 14px;'>Ing. Glaux Shopos - Tu Tutor Virtual de la FICA</p>
             """, unsafe_allow_html=True)
         
         # 2. BIENVENIDA (Siempre visible)
         st.markdown("""
         <div style="background-color: #f0f2f6; padding: 10px; border-radius: 5px; margin-bottom: 10px; font-size: 14px;">
-            <strong>🦅 ¡Hola compañero! Soy el Ing. Condoi.</strong><br>
+            <strong>🦅 ¡Hola compañero! Soy el Ing. Glaux Shopos.</strong><br>
             Si quieres conversar sobre algún tema en general, ¡escribe abajo!
             Si necesitas que revise información específica, ve a <b>"Gestión de Bibliografía"</b> y dame los archivos.
         </div>
@@ -325,7 +325,7 @@ def interfaz_chat():
                         contexto_pdf = buscar_informacion(prompt, textos, fuentes)
                         
                         prompt_sistema = f"""
-                        Eres el **Ing. Condoi** (Tutor Virtual FICA - UCE).
+                        Eres el **Ing. Glaux Shopos** (Tutor Virtual FICA - UCE).
                         Identidad: Profesional, amable, compañero universitario.
                         
                         CONTEXTO:
