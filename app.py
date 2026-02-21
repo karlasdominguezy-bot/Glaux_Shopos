@@ -172,7 +172,7 @@ def estilos_globales():
 
     <div class="footer-credits">
         <div style="font-weight: bold; color: #002F6C; font-size: 11px;">
-            Hecho por: Altamirano Isis, Castillo Alexander, Chalán David, Flores Bryan, Cabezas Jhampierre
+            Hecho por: Chaluisa Sebastian, Domínguez Karla, Simbaña Erick, Puetate Juan, Tipán María.
         </div>
         <div style="font-size: 9px; color: #666;">
             Proyecto Académico | Powered by Google Gemini API
