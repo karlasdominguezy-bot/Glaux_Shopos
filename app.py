@@ -158,11 +158,10 @@ def interfaz_chat():
     # === ENCABEZADO: Logo UCE | Título | Avatar Glaux Shopos ===
     col_logo, col_titulo, col_avatar_head = st.columns([1.2, 3, 1.2])
 
-    with col_logo:
-        if os.path.exists(LOGO_URL):
-            # Margen para que el logo no se corte
-            st.markdown('<div style="margin-top: 15px;">', unsafe_allow_html=True)
-            st.image(LOGO_URL, width=150)
+    with col_avatar_head:
+        if os.path.exists(AVATAR_URL):
+            st.markdown('<div style="margin-top: 10px;">', unsafe_allow_html=True)
+            st.image(AVATAR_URL, width=160) # Rectificado a 160
             st.markdown('</div>', unsafe_allow_html=True)
 
     with col_titulo:
